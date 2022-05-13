@@ -1,14 +1,14 @@
 import { PaletteOptions } from '@mui/material';
-import {primary, grey, text, success, base, dark, secondary} from './palette-blocks';
+import {primary, grey, text, success, base, bold, secondary, error} from './palette-blocks';
 
 declare module '@mui/material/styles/createPalette' {
   interface Palette {
     base: Palette['primary'];
-    dark: Palette['primary'];
+    bold: Palette['primary'];
   }
   interface PaletteOptions {
     base: PaletteOptions['primary'];
-    dark: PaletteOptions['primary'];
+    bold: PaletteOptions['primary'];
   }
   interface PaletteColor {
     hover?: string;
@@ -27,6 +27,7 @@ export const palette: PaletteOptions = {
   primary,
   success,
   base,
-  dark,
-  secondary
+  bold,
+  secondary,
+  error
 }

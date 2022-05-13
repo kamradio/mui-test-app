@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Box, Typography, Grid, Button, Divider} from '@mui/material';
+import {Container, Box, Typography, Button, Divider} from '@mui/material';
 import { MdAccessTimeFilled, MdCheckCircle, MdAddToQueue, MdChecklist } from 'react-icons/md';
 
 export function ButtonsSection() {
@@ -12,12 +12,16 @@ export function ButtonsSection() {
 
         <Typography variant="h4" gutterBottom pb={3}>Base</Typography>
 
-        <Box>
+        <Box mb={3}>
           <Button color={'base'} variant={'contained'} startIcon={<MdAccessTimeFilled />}>Base contained button</Button>{' '}
           <Button color={'base'} endIcon={<MdCheckCircle />} >Base with icon</Button>{' '}
           <Button disabled={true} color={'base'} >Base disabled</Button>{' '}
           <Button color={'base'} >Base without icon</Button>{' '}
           <Button color={'base'} variant="outlined">Outlined</Button>{' '}
+        </Box>
+
+        <Box mb={5}>
+          <Button color={'base'} variant={'contained'} fullWidth={true}>Full width button</Button>
         </Box>
 
         <Box py={4}>
@@ -62,6 +66,33 @@ export function ButtonsSection() {
           <Button color={'success'} variant="outlined">Outlined success</Button>{' '}
         </Box>
 
+        <Box py={4}>
+          <Divider />
+        </Box>
+
+        <Typography variant="h4" gutterBottom pb={3}>Error</Typography>
+
+        <Box mb={5}>
+          <Button color={'error'} variant={'contained'} startIcon={<MdAddToQueue />}>Error contained button</Button>{' '}
+          <Button color={'error'} endIcon={<MdChecklist />} >Error with icon</Button>{' '}
+          <Button disabled={true} color={'error'} >Error disabled</Button>{' '}
+          <Button color={'error'} >Error without icon</Button>{' '}
+          <Button color={'error'} variant="outlined">Outlined error</Button>{' '}
+        </Box>
+
+        <Box py={4}>
+          <Divider />
+        </Box>
+
+        <Typography variant="h4" gutterBottom pb={3}>Bold</Typography>
+
+        <Box mb={5}>
+          <Button color={'bold'} variant={'contained'} startIcon={<MdAddToQueue />}>Error contained button</Button>{' '}
+          <Button color={'bold'} endIcon={<MdChecklist />} >Error with icon</Button>{' '}
+          <Button disabled={true} color={'bold'} >Error disabled</Button>{' '}
+          <Button color={'bold'} >Error without icon</Button>{' '}
+          <Button color={'bold'} variant="outlined">Outlined error</Button>{' '}
+        </Box>
 
       </Box>
     </Container>
