@@ -1,0 +1,1 @@
+export {MuiDivider} from './Divider';

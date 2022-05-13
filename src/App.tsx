@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, Routes, Link} from "react-router-dom";
+import {Box, Container} from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+
+import {TypographySection, ColorsSection} from './sections';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <CssBaseline />
+
+      <Container>
+        <Box p={3}>
+          <Link to="/typography">Typography</Link>{" "}|{" "}
+          <Link to="/colors">Colors</Link>
+        </Box>
+      </Container>
+
+
+      <Routes>
+        <Route path="/typography" element={<TypographySection />} />
+        <Route path="/colors" element={<ColorsSection />} />
+      </Routes>
+
     </div>
   );
 }
