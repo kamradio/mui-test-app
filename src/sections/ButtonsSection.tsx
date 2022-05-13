@@ -14,6 +14,7 @@ export function ButtonsSection() {
 
         <Box mb={3}>
           <Button color={'base'} variant={'contained'} startIcon={<MdAccessTimeFilled />}>Base contained button</Button>{' '}
+          <Button disabled={true} color={'base'} variant={'contained'} >Base contained disabled</Button>{' '}
           <Button color={'base'} endIcon={<MdCheckCircle />} >Base with icon</Button>{' '}
           <Button disabled={true} color={'base'} >Base disabled</Button>{' '}
           <Button color={'base'} >Base without icon</Button>{' '}

@@ -14,5 +14,10 @@ export const BaseContained = {
     '&:active': {
       background: base.active
     },
+    '&:disabled': {
+      background: base.light,
+      color: base.main,
+      opacity: 0.5
+    }
   }
 }
