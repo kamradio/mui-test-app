@@ -3,7 +3,7 @@ import {Route, Routes, Link} from "react-router-dom";
 import {Box, Container} from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import {TypographySection, ColorsSection} from './sections';
+import {TypographySection, ColorsSection, ButtonsSection} from './sections';
 
 import './App.css';
 
@@ -14,9 +14,10 @@ function App() {
       <CssBaseline />
 
       <Container>
-        <Box p={3}>
+        <Box p={3} mb={5}>
           <Link to="/typography">Typography</Link>{" "}|{" "}
-          <Link to="/colors">Colors</Link>
+          <Link to="/colors">Colors</Link>{" "}|{" "}
+          <Link to="/buttons">Buttons</Link>
         </Box>
       </Container>
 
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/typography" element={<TypographySection />} />
         <Route path="/colors" element={<ColorsSection />} />
+        <Route path="/buttons" element={<ButtonsSection />} />
       </Routes>
 
     </div>

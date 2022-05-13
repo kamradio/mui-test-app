@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {Box, Divider, Container} from '@mui/material';
+import {Box, Divider, Container, Stack} from '@mui/material';
 import Typography from '@mui/material/Typography';
+import { MdSwapHorizontalCircle } from 'react-icons/md';
 
 export function TypographySection() {
   return (
@@ -9,10 +10,19 @@ export function TypographySection() {
 
         <Divider textAlign="left" sx={{fontSize: '0.75rem'}}>Page title (H1)</Divider>
 
-        <Box py={3}>
+        <Box py={5}>
+
           <Typography variant="h1">
-            Heading main in the page
+
+            <Stack direction={'row'} spacing={3}>
+              <Box>Heading main in the page</Box>
+              <Box component={'span'} lineHeight={0} flexGrow={1}>
+                <MdSwapHorizontalCircle />
+              </Box>
+            </Stack>
+
           </Typography>
+
 
           <Typography variant="caption1">
             This is the nice caption
@@ -21,9 +31,9 @@ export function TypographySection() {
 
         <Divider textAlign="left" sx={{fontSize: '0.75rem'}}>Subtitle 2 and modal dialog title</Divider>
 
-        <Box py={3}>
+        <Box py={5}>
           <Typography variant="h2">
-            Here is the subtitle h2
+            This is the subtitle h2
           </Typography>
           <Typography variant="body1" gutterBottom>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus volutpat at nam feugiat in quam convallis massa. Euismod eget diam ut ullamcorper ultricies scelerisque sed. Et egestas at posuere sagittis vulputate. Ultricies vitae fringilla viverra orci, quis feugiat commodo dictum.
@@ -39,7 +49,7 @@ export function TypographySection() {
 
         <Divider textAlign="left" sx={{fontSize: '0.75rem'}} light >Subtitle 3</Divider>
 
-        <Box py={3}>
+        <Box py={5}>
           <Typography variant={'h3'}>
             h3. Subtitle
           </Typography>
@@ -50,7 +60,7 @@ export function TypographySection() {
 
         <Divider textAlign="left" sx={{fontSize: '0.75rem'}} light >Subtitle 4</Divider>
 
-        <Box py={3}>
+        <Box py={5}>
           <Typography variant={'h4'}>
             h4. Subtitle
           </Typography>
@@ -59,13 +69,24 @@ export function TypographySection() {
           </Typography>
         </Box>
 
-        <Divider textAlign="left" sx={{fontSize: '0.75rem'}} light >Text blocks</Divider>
+        <Divider textAlign="left" sx={{fontSize: '0.75rem'}} light >Text blocks 1.</Divider>
 
-        <Box py={3}>
-          <Typography variant="body2">
-            Here is the subtitle
+        <Box py={5}>
+          <Typography variant="subtitle1">
+            This is the subtitle 1
           </Typography>
           <Typography variant="body1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus volutpat at nam feugiat in quam convallis massa. Euismod eget diam ut ullamcorper ultricies scelerisque sed. Et egestas at posuere sagittis vulputate. Ultricies vitae fringilla viverra orci, quis feugiat commodo dictum.
+          </Typography>
+        </Box>
+
+        <Divider textAlign="left" sx={{fontSize: '0.75rem'}} light >Text blocks 2.</Divider>
+
+        <Box py={5}>
+          <Typography variant="subtitle2">
+            This is the subtitle 2
+          </Typography>
+          <Typography variant="body2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus volutpat at nam feugiat in quam convallis massa. Euismod eget diam ut ullamcorper ultricies scelerisque sed. Et egestas at posuere sagittis vulputate. Ultricies vitae fringilla viverra orci, quis feugiat commodo dictum.
           </Typography>
         </Box>

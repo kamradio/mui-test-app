@@ -9,7 +9,7 @@ export const MuiDivider = {
       }
     }
   }, {
-    props: { textAlign: "left" as any },
+    props: { textAlign: "left" } as any,
     style: {
       '&::before': {
         width: '0.5rem'

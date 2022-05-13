@@ -1,4 +1,5 @@
 import React from 'react';
+import {text} from '../palette-blocks';
 
 declare module '@mui/material/styles' {
   interface TypographyVariants {
@@ -22,5 +23,6 @@ export const caption1: React.CSSProperties = {
   marginBottom: '0.125rem',
   fontWeight: '400',
   textTransform: 'uppercase',
-  letterSpacing: '1px'
+  letterSpacing: '1px',
+  color: text.secondary
 };
