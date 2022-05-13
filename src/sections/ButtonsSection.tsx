@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Box, Typography, Button, Divider} from '@mui/material';
-import { MdAccessTimeFilled, MdCheckCircle, MdAddToQueue, MdChecklist } from 'react-icons/md';
+import { MdAccessTimeFilled, MdCheckCircle, MdAddToQueue, MdChecklist, MdAirplaneTicket, MdAccountBalanceWallet } from 'react-icons/md';
 
 export function ButtonsSection() {
   return (
@@ -13,13 +13,13 @@ export function ButtonsSection() {
         <Typography variant="h4" gutterBottom pb={3}>Base</Typography>
 
         <Box mb={3}>
-          <Button color={'base'} variant={'contained'} startIcon={<MdAccessTimeFilled />}>Base contained button</Button>{' '}
+          <Button color={'base'} variant={'contained'} startIcon={<MdAirplaneTicket />}>Base contained button</Button>{' '}
           <Button disabled={true} color={'base'} variant={'contained'} >Base contained disabled</Button>{' '}
           <Button color={'base'} endIcon={<MdCheckCircle />} >Base with icon</Button>{' '}
           <Button disabled={true} color={'base'} >Base disabled</Button>{' '}
           <Button color={'base'} >Base without icon</Button>{' '}
           <Button color={'base'} variant="outlined">Outlined</Button>{' '}
-          <Button disabled={true} color={'base'} variant="outlined">Outlined</Button>{' '}
+          <Button disabled={true} color={'base'} variant="outlined" startIcon={<MdAccountBalanceWallet />}>Outlined</Button>{' '}
         </Box>
 
         <Box mb={5}>
@@ -34,6 +34,7 @@ export function ButtonsSection() {
 
         <Box mb={5}>
           <Button color={'primary'} variant={'contained'} startIcon={<MdAddToQueue />}>Primary contained button</Button>{' '}
+          <Button disabled={true} color={'primary'} variant={'contained'} >Primary contained button</Button>{' '}
           <Button color={'primary'} endIcon={<MdChecklist />} >Primary with icon</Button>{' '}
           <Button disabled={true} color={'primary'} >Primary disabled</Button>{' '}
           <Button color={'primary'} >Primary without icon</Button>{' '}

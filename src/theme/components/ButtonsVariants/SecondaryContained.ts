@@ -8,11 +8,5 @@ export const SecondaryContained = {
   style: {
     background: secondary.light,
     color: secondary.main,
-    '&:hover': {
-      background: secondary.hover
-    },
-    '&:active': {
-      background: secondary.active
-    },
   }
 }

@@ -3,4 +3,7 @@ export const primary = {
   light: '#EFF0FF',
   dark: '#495BFF',
   contrastText: '#fff',
+
+  hover: '#495BFF',
+  active: '#3A4DFC'
 }

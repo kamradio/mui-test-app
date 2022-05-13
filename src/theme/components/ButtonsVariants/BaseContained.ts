@@ -14,11 +14,6 @@ export const BaseContained = {
     },
     '&:active': {
       background: base.active
-    },
-    '&:disabled': {
-      background: base.light,
-      color: base.main,
-      opacity: palette.action?.disabledOpacity
     }
   }
 }

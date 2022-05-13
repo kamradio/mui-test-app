@@ -1,5 +1,5 @@
 import {primary} from '../palette-blocks';
-import {Base, Bold, BoldContained, BaseContained, SecondaryContained, Success, SuccessContained, ErrorContained} from "./ButtonsVariants";
+import {Base, Bold, BoldContained, BaseContained, Secondary, Success, SuccessContained, ErrorContained, Primary, SecondaryContained} from "./ButtonsVariants";
 
 declare module '@mui/material/Button' {
   interface ButtonPropsColorOverrides {
@@ -22,5 +22,5 @@ export const MuiButton = {
       }
     },
   },
-  variants: [BaseContained, Base, Bold, BoldContained, SecondaryContained, Success, SuccessContained, ErrorContained]
+  variants: [BaseContained, Base, Bold, BoldContained, Secondary, Success, SuccessContained, ErrorContained, Primary, SecondaryContained]
 }
