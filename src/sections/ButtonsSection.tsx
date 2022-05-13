@@ -19,6 +19,7 @@ export function ButtonsSection() {
           <Button disabled={true} color={'base'} >Base disabled</Button>{' '}
           <Button color={'base'} >Base without icon</Button>{' '}
           <Button color={'base'} variant="outlined">Outlined</Button>{' '}
+          <Button disabled={true} color={'base'} variant="outlined">Outlined</Button>{' '}
         </Box>
 
         <Box mb={5}>

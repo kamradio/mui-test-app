@@ -29,5 +29,9 @@ export const palette: PaletteOptions = {
   base,
   bold,
   secondary,
-  error
+  error,
+
+  action: {
+    disabledOpacity: '0.6' as any
+  }
 }

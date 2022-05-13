@@ -1,4 +1,5 @@
 import {base} from "../../palette-blocks";
+import {palette} from "../../palette";
 
 export const BaseContained = {
   props: {
@@ -17,7 +18,7 @@ export const BaseContained = {
     '&:disabled': {
       background: base.light,
       color: base.main,
-      opacity: 0.5
+      opacity: palette.action?.disabledOpacity
     }
   }
 }

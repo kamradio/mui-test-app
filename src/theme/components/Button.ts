@@ -17,8 +17,8 @@ export const MuiButton = {
     root: {
       textTransform: 'none' as any,
       padding: '6px 16px' as any,
-      '&:focus': {
-        boxShadow: `0 0 1px 0.2rem ${primary.main}88`,
+      '&:focus&:not(:active)': {
+        boxShadow: `0 0 1px 0.2rem ${primary.main}44`,
       }
     },
   },
