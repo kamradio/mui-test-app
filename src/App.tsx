@@ -14,7 +14,7 @@ function App() {
       <CssBaseline />
 
       <Container>
-        <Box p={3} mb={5}>
+        <Box p={3} mb={8}>
           <Link to="/typography">Typography</Link>{" "}|{" "}
           <Link to="/colors">Colors</Link>{" "}|{" "}
           <Link to="/buttons">Buttons</Link>

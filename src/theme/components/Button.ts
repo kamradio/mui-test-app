@@ -1,4 +1,4 @@
-import {primary} from '../palette-blocks';
+import {grey} from '../palette-blocks';
 import {Base, Bold, BoldContained, BaseContained, Secondary, Success, SuccessContained, ErrorContained, Primary, SecondaryContained} from "./ButtonsVariants";
 
 declare module '@mui/material/Button' {
@@ -15,10 +15,9 @@ export const MuiButton = {
   },
   styleOverrides: {
     root: {
-      textTransform: 'none' as any,
       padding: '6px 16px' as any,
       '&:focus&:not(:active)': {
-        boxShadow: `0 0 1px 0.2rem ${primary.main}44`,
+        boxShadow: `0 1px 0 0.1rem ${grey['600']}44`,
       }
     },
   },
