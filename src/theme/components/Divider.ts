@@ -1,11 +1,12 @@
-import {palette} from '../palette';
+import {grey} from '../palette-blocks';
 
 export const MuiDivider = {
   variants: [{
     props: { light: true },
     style: {
+      borderColor: grey["200"],
       '&::before, &::after': {
-        borderColor: palette.grey?.["200"]
+        borderColor: grey["200"],
       }
     }
   }, {

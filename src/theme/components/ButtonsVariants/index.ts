@@ -1,15 +1,13 @@
-export {Base} from './Base';
-export {BaseContained} from './BaseContained';
+export {Base, BaseContained} from './Base';
 
-export {Primary} from './Primary';
+export {Primary, PrimaryText, PrimaryOutline} from './Primary';
 
-export {Secondary} from './Secondary';
-export {SecondaryContained} from './SecondaryContained';
+export {Secondary, SecondaryContained, SecondaryOutlined, SecondaryText} from './Secondary';
 
-export {Bold} from './Bold';
-export {BoldContained} from './BoldContained';
+export {Bold, BoldContained, BoldText, BoldOutlined} from './Bold';
 
-export {ErrorContained} from './ErrorContained';
+export {Error, ErrorOutlined, ErrorText} from './Error';
 
-export {Success} from './Success';
-export {SuccessContained} from './SuccessContained';
+export {Success, SuccessContained, SuccessOutlined} from './Success';
+
+export {SizeSmall, SizeMedium, SizeLarge} from './Size';

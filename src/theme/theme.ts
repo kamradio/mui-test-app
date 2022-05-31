@@ -6,6 +6,6 @@ import {MuiDivider, MuiButton} from './components';
 export const theme = createTheme({
   typography,
   palette,
-  spacing: [0, 2, 4, 8, 16, 24, 32, 40, 48],
+  spacing: 4,
   components: {MuiDivider, MuiButton}
 });
