@@ -1,4 +1,5 @@
-import {grey, success} from "../../palette-blocks";
+import {base, grey} from "../../palette-blocks";
+import {buttonFocus} from "../mixins";
 
 export const Bold = {
   props: {
@@ -18,7 +19,8 @@ export const Bold = {
       '.MuiLoadingButton-loadingIndicator': {
         color: grey['500'],
       }
-    }
+    },
+    '&:focus&:not(:active)': buttonFocus(base.main)
   }
 }
 

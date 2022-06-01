@@ -1,5 +1,6 @@
-import {primary, success} from "../../palette-blocks";
+import {success} from "../../palette-blocks";
 import {palette} from "../../palette";
+import {buttonFocus} from "../mixins";
 
 export const Success = {
   props: {
@@ -20,7 +21,8 @@ export const Success = {
       '.MuiLoadingButton-loadingIndicator': {
         color: success.main,
       }
-    }
+    },
+    '&:focus&:not(:active)': buttonFocus(success.main)
   }
 }
 

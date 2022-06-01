@@ -1,4 +1,4 @@
-import {grey} from '../palette-blocks';
+import {grey, primary} from '../palette-blocks';
 import {
   Primary, PrimaryText, PrimaryOutline,
   Secondary, SecondaryOutlined, SecondaryContained, SecondaryText,
@@ -29,7 +29,7 @@ export const MuiButton = {
   styleOverrides: {
     root: {
       '&:focus&:not(:active)': {
-        boxShadow: `0 1px 0 0.1rem ${grey['600']}44`,
+        boxShadow: `0 0 0 0.2rem ${primary.main}44`,
       }
     },
   },

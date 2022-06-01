@@ -1,5 +1,6 @@
 import {error} from "../../palette-blocks";
 import {palette} from "../../palette";
+import {buttonFocus} from "../mixins";
 
 export const Error = {
   props: {
@@ -22,7 +23,8 @@ export const Error = {
       '.MuiLoadingButton-loadingIndicator': {
         color: error.main,
       }
-    }
+    },
+    '&:focus&:not(:active)': buttonFocus(error.main)
   }
 }
 

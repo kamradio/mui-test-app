@@ -1,6 +1,7 @@
-import {primary, secondary} from "../../palette-blocks";
+import {base, primary, secondary} from "../../palette-blocks";
 import {palette} from "../../palette";
 import {ButtonColor, ButtonVariant} from "../Button";
+import {buttonFocus} from "../mixins";
 
 export const Primary = {
 
@@ -23,7 +24,8 @@ export const Primary = {
       '.MuiLoadingButton-loadingIndicator': {
         color: primary.main,
       }
-    }
+    },
+    '&:focus&:not(:active)': buttonFocus(primary.main)
   }
 
 }

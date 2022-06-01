@@ -1,5 +1,6 @@
 import {base} from "../../palette-blocks";
 import {palette} from "../../palette";
+import {buttonFocus} from '../mixins';
 
 export const Base = {
   props: {
@@ -17,7 +18,8 @@ export const Base = {
       background: base.light,
       color: base.main,
       opacity: palette.action?.disabledOpacity
-    }
+    },
+    '&:focus&:not(:active)': buttonFocus(base.main)
   }
 }
 
